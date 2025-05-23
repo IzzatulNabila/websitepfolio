@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contacts - Izzatul Nabila</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: white;
+      color: #333;
+    }
+
+    header, footer {
+      text-align: center;
+    }
+
+    header img, footer img {
+      width: 100%;
+      height: auto;
+    }
+
+    nav {
+      background-color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: orange;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff9900;
+    }
+
+    main {
+      padding: 40px 20px;
+      background-color: #f5f5f5;
+      min-height: 80vh;
+    }
+
+    table {
+      margin: 0 auto 40px auto;
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 600px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      padding: 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #ff9900;
+      color: white;
+    }
+
+    .contact-icon {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+
+    .social-link {
+      color: #0077b5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .social-link:hover {
+      text-decoration: underline;
+    }
+
+    .contact-form {
+      background-color: #ffffff;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h3 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .contact-form button {
+      margin-top: 15px;
+      background-color: #ff9900;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .contact-form button:hover {
+      background-color: #e68a00;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="header.png" alt="This is Header">
+</header>
+
+<nav>
+  <ul><b>
+   <a href="izzatulnabila.html">Home</a> |
+      <a href="aboutme.html">About Me</a> |
+      <a href="professional.html">Professional Experience</a> |
+      <a href="education.html">Education</a> |
+      <a href="involvement.html">Involvement Activities</a> |
+      <a href="contacts.html">Contacts</a> |
+      <a href="index.html">About</a>
+
+  </ul>
+</nav>
+
+<main>
+  <h2 style="text-align:center;">Contact Information</h2>
+
+  <table>
+    
+    <tr>
+      <td>Name</td>
+      <td>Izzatul Nabila Binti Mohd Norishan</td>
+    </tr>
+    <tr>
+      <td>Student ID</td>
+      <td>2024124897</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><a href="mailto:2024124897@student.uitm.edu.my">2024124897@student.uitm.edu.my</a></td>
+    </tr>
+    <tr>
+      <td>LinkedIn</td>
+      <td>
+        <img src="linkedincon.png" alt="LinkedIn" class="contact-icon">
+        <a class="social-link" href="https://www.linkedin.com/in/izzatul-nabila-345b09267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+          linkedin.com/in/yourprofile
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td>Jalan Pulau Indah Au10/A, Puncak Perdana, 40150 Shah Alam, Selangor</td>
+    </tr>
+  </table>
+
+  <div class="contact-form">
+  <h3>Ask Me</h3>
+  <form action="https://formsubmit.co/2024124897@student.uitm.edu.my" method="POST" onsubmit="return showConfirmation()">
+    <!-- Disable CAPTCHA and redirect after submission -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="thankyou.html">
+
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<script>
+  function showConfirmation() {
+    alert("Your feedback has been sent!");
+    return true;
+  }
+</script>
+
+
+</main>
+
+<footer>
+  <img src="footer.png" alt="This is Footer">
+</footer>
+
+</body>
+</html>

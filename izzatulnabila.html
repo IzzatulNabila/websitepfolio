@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Izzatul Nabila Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+
+heading1 {
+  float: center;
+  padding: 0px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ nav {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+nav a {
+      color: orange;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+
+div {
+  background-color: #fafafa;
+  padding: 0px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>
+	<img src="header.png" alt="This is Header" width=100% height=100%>	
+</h2>
+</header>
+
+<div>
+<nav>
+  <ul><b>
+   <a href="izzatulnabila.html">Home</a> |
+      <a href="aboutme.html">About Me</a> |
+      <a href="professional.html">Professional Experience</a> |
+      <a href="education.html">Education</a> |
+      <a href="involvement.html">Involvement Activities</a> |
+      <a href="contacts.html">Contacts</a> |
+      <a href="index.html">About</a>
+
+  </ul>
+</nav>
+</div>
+
+<section>
+  
+  <heading1>
+    <h1>
+	<img src="welcome.png" alt="This is Banner" width=100% height=100%>
+    </h1>
+  
+</section>
+
+<footer>
+  <img src="footer.png" alt="This is Footer" width=100% height=100%>
+</footer>
+
+</body>
+</html>
+
